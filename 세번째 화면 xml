@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="361dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="34dp"
+        android:text="  010-1234-5678 "
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="320dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="24dp"
+        android:background="#58ACFA"
+        android:padding="10dp"
+        android:text="문자 보내기 연습을 위한 임의 화면 \n입니다"
+        android:textColor="#263238"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="326dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="256dp"
+        android:background="#58ACFA"
+        android:padding="10dp"
+        android:text="안녕하세요? 반갑습니다. 를 입력 후 전송해보세요\n문장 기호 또한 바르게 입력하세요."
+        android:textColor="#263238"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/msg_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/msg_in"
+        android:layout_width="277dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="63dp"
+        android:hint="메세지를 입력하세요"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cl"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="onButton1Clicked"
+        android:text="전송"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
