@@ -41,8 +41,8 @@ public class MainActivity3 extends AppCompatActivity {
 
     private void showSuccessPopup() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("성공!");
-        builder.setMessage("문자를 전송 했어요!.");
+        builder.setTitle("미션성공!");
+        builder.setMessage("참 잘했어요!.");
 
         builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
             @Override
@@ -57,7 +57,7 @@ public class MainActivity3 extends AppCompatActivity {
 
     private void showErrorPopup() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("오답!");
+        builder.setTitle("아쉬워요");
         builder.setMessage("정해진 문자를 올바르게 입력해주세요!");
 
         builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
